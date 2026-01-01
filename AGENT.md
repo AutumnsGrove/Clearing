@@ -5,17 +5,21 @@
 ---
 
 ## Project Purpose
-[Fill in: What this project does - 1-2 sentences]
+Clearing is Grove's public status page—transparent, real-time communication about platform health. When something goes wrong or maintenance is planned, users can check status.grove.place to understand what's happening without needing to contact support.
 
 ## Tech Stack
-[Fill in: Technologies, frameworks, and languages used]
-- Language:
-- Framework:
-- Key Libraries:
-- Package Manager:
+- **Language**: TypeScript/JavaScript
+- **Framework**: SvelteKit (static site generation)
+- **Key Libraries**: Cloudflare Workers API, D1 database, Tailwind CSS
+- **Package Manager**: npm/pnpm
 
 ## Architecture Notes
-[Fill in: Key architectural decisions, patterns, or structure]
+- **Frontend**: SvelteKit static site hosted on Cloudflare Pages
+- **Backend**: Cloudflare Worker API endpoints
+- **Database**: D1 (shared with main Grove database)
+- **Hosting**: Cloudflare Pages + Workers
+- **Styling**: Tailwind CSS (consistent with Grove aesthetic)
+- **Database Schema**: See `clearing-spec.md` for detailed schema (status_components, status_incidents, status_updates tables)
 
 ---
 
@@ -202,5 +206,5 @@ For in-depth reference beyond what skills provide, see:
 
 ---
 
-*Last updated: 2025-12-22*
+*Last updated: 2026-01-01*
 *Model: Claude Opus 4.5*
